@@ -1,0 +1,15 @@
+vendor/
+core/
+.DS_Store
+.idea/
+.env
+salts.php
+auth.json
+wp-content/*
+*/*/*/node_modules
+
+*.log
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
