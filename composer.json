@@ -1,5 +1,5 @@
 {
-  "name": "project name",
+  "name": "bramesposito/wp-starter",
   "description": "Empty example config to start with",
   "type": "project",
   "require": {
