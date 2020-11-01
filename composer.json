@@ -8,7 +8,8 @@
     "johnpbloch/wordpress-core-installer": "^2.0",
     "johnpbloch/wordpress-core": "^5",
     "koodimonni-language/core-nl_be": "*",
-    "boxuk/wp-muplugin-loader": "^1.0"
+    "boxuk/wp-muplugin-loader": "^1.0",
+    "wpackagist-theme/twentytwenty": "^1.5"
   },
   "authors": [
     {
