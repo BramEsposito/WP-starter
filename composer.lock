@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "991263c531908adf9a38ca2d6c1bcb05",
+    "content-hash": "1cfc1364b84a6c7a36678bd8ef142411",
     "packages": [
         {
             "name": "boxuk/wp-muplugin-loader",
@@ -865,6 +865,24 @@
                     "."
                 ]
             }
+        },
+        {
+            "name": "wpackagist-plugin/health-check",
+            "version": "1.4.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/health-check/",
+                "reference": "tags/1.4.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/health-check.1.4.5.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/health-check/"
         },
         {
             "name": "wpackagist-plugin/query-monitor",

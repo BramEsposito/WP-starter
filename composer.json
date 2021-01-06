@@ -65,6 +65,7 @@
   "require-dev": {
     "bramesposito/b35-http-auth": "@dev",
     "wpackagist-plugin/theme-check": "20200922.1",
-    "wpackagist-plugin/query-monitor": "^3.6"
+    "wpackagist-plugin/query-monitor": "^3.6",
+    "wpackagist-plugin/health-check": "^1.4"
   }
 }
