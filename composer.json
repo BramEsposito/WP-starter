@@ -1,71 +1,73 @@
 {
-  "name": "bramesposito/wp-starter",
-  "description": "Empty example config to start with",
-  "type": "project",
-  "require": {
-    "vlucas/phpdotenv": "^5.2",
-    "roots/wp-stage-switcher": "*",
-    "johnpbloch/wordpress-core-installer": "^2.0",
-    "johnpbloch/wordpress-core": "^5",
-    "koodimonni-language/core-nl_be": "*",
-    "boxuk/wp-muplugin-loader": "^1.0",
-    "wpackagist-theme/twentytwentyone": "^1.1"
-  },
-  "authors": [
-    {
-      "name": "Bram Esposito",
-      "email": "bram@bramesposito.com"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org"
-    },
-    {
-      "type": "composer",
-      "url": "https://wp-languages.github.io"
-    },
-    {
-      "type":"package",
-      "package": {
-        "name": "bramesposito/b35-http-auth",
-        "version": "1.0",
-        "type": "wordpress-muplugin",
-        "source": {
-          "url": "https://gist.github.com/bbd5a6a03b2ce5dcda33f4a4827187b0.git",
-          "type": "git",
-          "reference":"master"
-        },
-        "autoload": {
-          "classmap": ["."]
+    "name": "bramesposito/wp-starter",
+    "type": "project",
+    "description": "Empty example config to start with",
+    "authors": [
+        {
+            "name": "Bram Esposito",
+            "email": "bram@bramesposito.com"
         }
-      }
-    }
-  ],
-  "extra": {
-    "dropin-paths": {
-      "wp-content/languages/": [
-        "vendor:koodimonni-language"
-      ]
+    ],
+    "require": {
+        "boxuk/wp-muplugin-loader": "^1.0",
+        "johnpbloch/wordpress-core": "^5",
+        "johnpbloch/wordpress-core-installer": "^2.0",
+        "koodimonni-language/core-nl_be": "*",
+        "roots/wp-stage-switcher": "*",
+        "vlucas/phpdotenv": "^5.2",
+        "wpackagist-theme/twentytwentyone": "^1.1"
     },
-    "installer-paths": {
-      "wp-content/themes/{$name}": [
-        "type:wordpress-theme"
-      ],
-      "wp-content/mu-plugins/{$name}/": [
-        "type:wordpress-muplugin"
-      ],
-      "wp-content/plugins/{$name}/": [
-        "type:wordpress-plugin"
-      ]
+    "require-dev": {
+        "bramesposito/b35-http-auth": "@dev",
+        "wpackagist-plugin/health-check": "^1.4",
+        "wpackagist-plugin/query-monitor": "^3.6",
+        "wpackagist-plugin/theme-check": "20200922.1"
     },
-    "wordpress-install-dir": "core"
-  },
-  "require-dev": {
-    "bramesposito/b35-http-auth": "@dev",
-    "wpackagist-plugin/theme-check": "20200922.1",
-    "wpackagist-plugin/query-monitor": "^3.6",
-    "wpackagist-plugin/health-check": "^1.4"
-  }
+    "extra": {
+        "dropin-paths": {
+            "wp-content/languages/": [
+                "vendor:koodimonni-language"
+            ]
+        },
+        "installer-paths": {
+            "wp-content/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "wp-content/themes/{$name}": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "core"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://wp-languages.github.io"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "bramesposito/b35-http-auth",
+                "version": "1.0",
+                "type": "wordpress-muplugin",
+                "source": {
+                    "url": "https://gist.github.com/bbd5a6a03b2ce5dcda33f4a4827187b0.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "classmap": [
+                        "."
+                    ]
+                }
+            }
+        }
+    ]
 }

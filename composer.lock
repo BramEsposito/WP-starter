@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1cfc1364b84a6c7a36678bd8ef142411",
+    "content-hash": "31b1c577e0756f9a720403706b37ce09",
     "packages": [
         {
             "name": "boxuk/wp-muplugin-loader",
