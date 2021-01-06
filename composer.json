@@ -9,7 +9,7 @@
     "johnpbloch/wordpress-core": "^5",
     "koodimonni-language/core-nl_be": "*",
     "boxuk/wp-muplugin-loader": "^1.0",
-    "wpackagist-theme/twentytwenty": "^1.5"
+    "wpackagist-theme/twentytwentyone": "^1.1"
   },
   "authors": [
     {
@@ -64,7 +64,7 @@
   },
   "require-dev": {
     "bramesposito/b35-http-auth": "@dev",
-    "wpackagist-plugin/theme-check": "20190801.1",
+    "wpackagist-plugin/theme-check": "20200922.1",
     "wpackagist-plugin/query-monitor": "^3.6"
   }
 }
